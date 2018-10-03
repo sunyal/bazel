@@ -18,6 +18,7 @@ android_binary(
     manifest = "AndroidManifest.xml",
     resource_files = glob(["res/**"]),
     deps = [
+        "//third_party_additional:com_googlecode_mp4parser__isoparser",
         ":jni",
         ":lib",
         "@androidsdk//com.android.support:appcompat-v7-25.0.0",

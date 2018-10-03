@@ -1,5 +1,19 @@
 workspace(name = "io_bazel")
 
+android_sdk_repository(
+    name="androidsdk",
+    api_level=27,
+)
+
+android_ndk_repository(
+    name="androidndk",
+    path="<ADD_NDK_PATH>",
+    api_level=27,
+)
+
+load("//third_party_additional:main_dependencies.bzl", "generated_main_dep_rules")
+generated_main_dep_rules()
+
 # Protobuf expects an //external:python_headers label which would contain the
 # Python headers if fast Python protos is enabled. Since we are not using fast
 # Python protos, bind python_headers to a dummy target.

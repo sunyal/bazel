@@ -1,0 +1,2 @@
+load(":main_dependencies.bzl", "generate_main_transitive_dependency_rules")
+generate_main_transitive_dependency_rules()

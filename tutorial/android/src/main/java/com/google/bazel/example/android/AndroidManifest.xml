@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.bazel.example.android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.google.bazel.example.android"	
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0"
+    tools:targetApi="n">
 
     <uses-sdk
         android:minSdkVersion="7"
